@@ -1,0 +1,17 @@
+{
+  "name": "leofcoin-params",
+  "version": "0.1.0",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/module/index.js",
+  "repository": "https://github.com/leofcoin/leofcoin-params",
+  "author": "vandeurenglenn",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "npm run build && node test.js",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "tape": "^4.9.0"
+  }
+}

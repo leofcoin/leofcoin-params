@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- 6
+- 7
+- 8
+- 9
+cache: 
+  yarn: true
+before_script:
+  - npm i -g rollup
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: vandeurenglenn@gmail.com
+  api_key:
+    secure: CK5Vd30vVjfiQv/WIdjvAQFU2PkohZKlzTkhl4rcaintbhj7e8ZHUXX2cZXvzeYUe0bD3ox8pe8UR3c0/tuKItx4xjZunpirgBINay7KtTp94TOydnjzs3qFU0zPA5u079OQvqLapqMRFQ7Z6qJvAmJ1NP6912oA28HBgpH1VfXij4qmWB9FpzPwK06LTt5nE1Mmp6o6QFU61r4fAkznt/KEGg49R3dP/H59lsgC3rg1Ezp7ZIXjUYgqiEQaMvpFqoJ9du3JGnp3gSgXjGVp518qbBtCiG+eDWJd3uUR0WXva1D/23U68FenkTTkU1QZuOZKvSMLdnxHBhgnHjbB/RIRI61scpReK/YXI/3zu8OYQ5HPpojcseWQmWJJenY2N82UnA/PXXSWlj7hJvGMCMJefb7k8bPnjqPTPKSv53MkNP+53N7fbWx9+1QNH80CFi/FyC9Mj6ObTERr5rCLpJtDfx2wWuTCd/+JW6t27Q8BkfYdFG2QKotIaET1K/StW2GyCx82AxPwL4+0JKb5EyJ8cgZ9xEKt5pgBtY1ZSi664/JsLh+wJLdeba2ielaLmKB1Z2duhRHcCwJ/qf3mkL8YyU4aDut1+S2K/sgVMOy3heC/eD1JLIOgIC7RoQKmJ9ioGvrSPstQJGhva1X0E/v33V9watYBz2TDOUECCvU=
+  on:
+    tags: true
+    repo: leofcoin/leofcoin-params
